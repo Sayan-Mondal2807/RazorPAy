@@ -1,0 +1,29 @@
+span {
+    color: white !important;
+    font-size: 40px !important;
+    font-family: 'Redressed', cursive !important;
+    padding-left: 40%;
+}
+
+h3 {
+    font-family: 'Redressed', cursive !important;
+    font-weight: bolder;
+}
+
+p {
+    font-family: 'Redressed', cursive;
+    font-weight: bolder;
+}
+
+body {
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+}
+
+@media only screen and (max-width: 600px) {
+    span {
+        padding-left: 36px;
+        color: white;
+        font-size: 30px;
+        font-family: 'Redressed', cursive;
+    }
+}
