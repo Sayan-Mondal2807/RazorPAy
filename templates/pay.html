@@ -1,0 +1,14 @@
+{% extends "layout.html" %}{% block body %}
+
+<div class="container text-center p-5">
+    <img src="https://media3.s-nbcnews.com/j/newscms/2019_33/2203981/171026-better-coffee-boost-se-329p_67dfb6820f7d3898b5486975903c2e51.fit-1240w.jpg" class="img-fluid" style="height:250px">
+</div>
+<div class="container text-center p-2">
+    <form action="/success" method="POST">
+        <script src="https://checkout.razorpay.com/v1/checkout.js" data-key="rzp_test_8KgpMHFByE6Ist" data-amount="{{payment['amount']}}" data-currency="INR" data-order_id="{{payment['order_id']}}" data-buttontext="Pay with Razorpay" data-name="Sayan Mondal"
+            data-description="Thank You for your donation" data-image="{{url_for('static',filename='PIC.jpg')}}" data-prefill.name="Sayan Mondal" data-prefill.email="example@example.com" data-theme.color="#F37254"></script>
+        <input type="hidden" custom="Hidden Element" name="hidden">
+    </form>
+</div>
+
+{% endblock %}

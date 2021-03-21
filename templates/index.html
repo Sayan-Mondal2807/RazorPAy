@@ -1,0 +1,22 @@
+{% extends "layout.html" %}{% block body %}
+
+
+<div class="container">
+    <div class="row shadow mt-5 p-4">
+        <div class="col-lg-6 mt-4">
+            <img src="https://media3.s-nbcnews.com/j/newscms/2019_33/2203981/171026-better-coffee-boost-se-329p_67dfb6820f7d3898b5486975903c2e51.fit-1240w.jpg" class="img-fluid">
+        </div>
+        <div class="col-lg-6 mt-4">
+            <h3>Donate For The Coffee</h3>
+            <p>Help Me to Buy a Coffee from Starbucks </p>
+            <form method="post">
+                <input class="form-control mt-2" placeholder="Enter Your E-mail" type="email" name="name" required>
+                <input class="form-control mt-2" placeholder="Enter Your Name" type="text" name="email" required>
+                <input class="form-control mt-2" placeholder="Enter Amount" name="amount" type="number" required>
+                <button class="btn btn-success mt-3 btn-block">Donate</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
